@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: Sorry, files with extension .dma_fmt should not have blank lines. Check line 3.

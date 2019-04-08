@@ -1,0 +1,8 @@
+graph "./test/goodExample_3LinkedModules/output/" {
+"mod1" ["shape"="rectangle","color"="red","style"="filled"]
+"mod3" ["shape"="rectangle","color"="red","style"="filled"]
+"mod2" ["shape"="rectangle","color"="red","style"="filled"]
+"mod1" -- "mod3" ["label"="WHILE,IF"]
+"mod1" -- "mod2" ["label"="WHILE,IF"]
+"mod3" -- "mod2" ["label"="WHILE"]
+}

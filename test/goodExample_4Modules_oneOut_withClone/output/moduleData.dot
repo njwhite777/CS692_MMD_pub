@@ -1,0 +1,10 @@
+graph "./test/goodExample_4Modules_oneOut_withClone/output/" {
+"c0" ["shape"="doublecircle"]
+"mod2" ["shape"="rectangle"]
+"mod3" ["shape"="rectangle"]
+"mod1" ["shape"="rectangle","color"="red","style"="filled"]
+"c0" -- "mod2" ["label"="CC,IF"]
+"c0" -- "mod1" ["label"="CC,IF"]
+"mod2" -- "mod3" ["label"="FOR"]
+"mod2" -- "mod1" ["label"="IF"]
+}

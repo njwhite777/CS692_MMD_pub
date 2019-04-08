@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>headerFileItemWrongRepresentation_CheckHeaderGetZeroOrOneAppearance.dma</filename>
+    <module>
+        <module_id>
+            <name>MOD1</name>
+        </module_id>
+        <process_data/>
+    </module>
+</mmd>

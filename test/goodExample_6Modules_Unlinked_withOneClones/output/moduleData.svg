@@ -1,0 +1,92 @@
+<svg width="817pt" height="412pt"
+ viewBox="0.00 0.00 816.61 411.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 407.5034)">
+<title>./test/goodExample_6Modules_Unlinked_withOneClones/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-407.5034 812.6143,-407.5034 812.6143,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="none" stroke="#000000" cx="399.1521" cy="-201.7517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="399.1521" cy="-201.7517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="399.1521" y="-197.5517" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+<!-- mod6 -->
+<g id="node2" class="node">
+<title>mod6</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="246.1521,-124.8 192.1521,-124.8 192.1521,-88.8 246.1521,-88.8 246.1521,-124.8"/>
+<text text-anchor="middle" x="219.1521" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">mod6</text>
+</g>
+<!-- c0&#45;&#45;mod6 -->
+<g id="edge1" class="edge">
+<title>c0&#45;&#45;mod6</title>
+<path fill="none" stroke="#000000" d="M379.1439,-187.7376C373.2277,-184.0481 366.6033,-180.3384 360.1521,-177.6 330.1996,-164.8855 318.5252,-173.6716 289.1857,-159.6 270.5136,-150.6446 251.9153,-136.3028 238.5821,-124.825"/>
+<text text-anchor="middle" x="360.1353" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,IF</text>
+</g>
+<!-- mod5 -->
+<g id="node3" class="node">
+<title>mod5</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="478.1521,-36 424.1521,-36 424.1521,0 478.1521,0 478.1521,-36"/>
+<text text-anchor="middle" x="451.1521" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod5</text>
+</g>
+<!-- mod6&#45;&#45;mod5 -->
+<g id="edge2" class="edge">
+<title>mod6&#45;&#45;mod5</title>
+<path fill="none" stroke="#000000" d="M246.2195,-96.4397C290.804,-79.3746 379.1924,-45.5432 423.8985,-28.4316"/>
+<text text-anchor="middle" x="370.15" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">TRY</text>
+</g>
+<!-- mod1 -->
+<g id="node4" class="node">
+<title>mod1</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="295.1521,-403.5034 241.1521,-403.5034 241.1521,-367.5034 295.1521,-367.5034 295.1521,-403.5034"/>
+<text text-anchor="middle" x="268.1521" y="-381.3034" font-family="Times,serif" font-size="14.00" fill="#000000">mod1</text>
+</g>
+<!-- mod1&#45;&#45;c0 -->
+<g id="edge3" class="edge">
+<title>mod1&#45;&#45;c0</title>
+<path fill="none" stroke="#000000" d="M240.8953,-373.1338C203.2822,-354.3 142.8711,-316.6051 168.6899,-278.7034 218.3856,-205.7509 277.6567,-257.3077 360.1521,-225.9034 366.7019,-223.41 373.3571,-219.777 379.2713,-216.0824"/>
+<text text-anchor="middle" x="254.8832" y="-292.5034" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+<!-- mod1&#45;&#45;mod6 -->
+<g id="edge4" class="edge">
+<title>mod1&#45;&#45;mod6</title>
+<path fill="none" stroke="#000000" d="M240.8583,-382.0316C185.192,-373.2978 59.5309,-344.7429 8.6899,-260.7034 -39.3422,-181.3069 124.5111,-130.3782 191.7028,-113.2374"/>
+<text text-anchor="middle" x="94.8832" y="-248.1034" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+<!-- mod1&#45;&#45;mod5 -->
+<g id="edge5" class="edge">
+<title>mod1&#45;&#45;mod5</title>
+<path fill="none" stroke="#000000" d="M295.2856,-384.7896C380.5016,-381.8212 637.1521,-367.0425 637.1521,-296.7034 637.1521,-296.7034 637.1521,-296.7034 637.1521,-106.8 637.1521,-72.001 529.7848,-38.8209 478.1981,-24.8873"/>
+<text text-anchor="middle" x="722.8832" y="-197.5517" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+<!-- mod4 -->
+<g id="node5" class="node">
+<title>mod4</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="403.1521,-314.7034 349.1521,-314.7034 349.1521,-278.7034 403.1521,-278.7034 403.1521,-314.7034"/>
+<text text-anchor="middle" x="376.1521" y="-292.5034" font-family="Times,serif" font-size="14.00" fill="#000000">mod4</text>
+</g>
+<!-- mod1&#45;&#45;mod4 -->
+<g id="edge6" class="edge">
+<title>mod1&#45;&#45;mod4</title>
+<path fill="none" stroke="#000000" d="M290.2682,-367.3191C308.9053,-351.9952 335.4369,-330.1804 354.0657,-314.8634"/>
+<text text-anchor="middle" x="417.8832" y="-336.9034" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+<!-- mod4&#45;&#45;c0 -->
+<g id="edge7" class="edge">
+<title>mod4&#45;&#45;c0</title>
+<path fill="none" stroke="#000000" d="M349.0477,-284.0786C344.4592,-282.1513 339.7062,-280.2817 335.1521,-278.7034 302.5263,-267.396 243.6772,-270.5068 265.6899,-243.9034 292.9359,-210.9755 320.3272,-241.4134 360.1521,-225.9034 366.6827,-223.36 373.3319,-219.7114 379.2465,-216.0178"/>
+<text text-anchor="middle" x="351.8832" y="-248.1034" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+<!-- mod4&#45;&#45;mod6 -->
+<g id="edge8" class="edge">
+<title>mod4&#45;&#45;mod6</title>
+<path fill="none" stroke="#000000" d="M348.8338,-280.6297C347.2711,-279.9331 345.7042,-279.2844 344.1521,-278.7034 278.173,-254.0039 230.3808,-286.6445 194.6899,-225.9034 175.8683,-193.8715 194.4886,-149.5885 207.9644,-125.0397"/>
+<text text-anchor="middle" x="280.8832" y="-197.5517" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+<!-- mod4&#45;&#45;mod5 -->
+<g id="edge9" class="edge">
+<title>mod4&#45;&#45;mod5</title>
+<path fill="none" stroke="#000000" d="M403.3175,-287.5422C415.8164,-281.8542 429.533,-273.1969 437.1521,-260.7034 448.7441,-241.6955 450.7381,-89.1437 451.081,-36.0995"/>
+<text text-anchor="middle" x="534.8832" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">CC,OR,AND,WHILE,TRY,IF</text>
+</g>
+</g>
+</svg>

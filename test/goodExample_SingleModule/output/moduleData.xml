@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_SingleModule.dma</filename>
+    <module>
+        <module_id>
+            <id>mod1</id>
+        </module_id>
+        <module_id>
+            <name>module1</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+    </module>
+</mmd>

@@ -1,0 +1,3 @@
+graph "./test/goodExample_100CompleteSameClones/output/" {
+"c0" ["shape"="doublecircle"]
+}

@@ -1,0 +1,57 @@
+<svg width="220pt" height="335pt"
+ viewBox="0.00 0.00 220.36 335.01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 331.0068)">
+<title>./test/goodExample_2clones/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-331.0068 216.3551,-331.0068 216.3551,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="none" stroke="#000000" cx="69.1517" cy="-302.8551" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="69.1517" cy="-302.8551" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="69.1517" y="-298.6551" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+<!-- c1 -->
+<g id="node2" class="node">
+<title>c1</title>
+<ellipse fill="none" stroke="#000000" cx="24.1517" cy="-201.7517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="24.1517" cy="-201.7517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="24.1517" y="-197.5517" font-family="Times,serif" font-size="14.00" fill="#000000">c1</text>
+</g>
+<!-- c0&#45;&#45;c1 -->
+<g id="edge1" class="edge">
+<title>c0&#45;&#45;c1</title>
+<path fill="none" stroke="#000000" d="M47.6992,-291.2113C36.7813,-284.0064 24.5599,-273.6531 18.4883,-260.7034 13.2942,-249.6253 14.1528,-236.1081 16.5592,-224.8131"/>
+<text text-anchor="middle" x="63.4834" y="-248.1034" font-family="Times,serif" font-size="14.00" fill="#000000">CC,IF,IF_XML</text>
+</g>
+<!-- mod5 -->
+<g id="node4" class="node">
+<title>mod5</title>
+<polygon fill="none" stroke="#000000" points="108.1517,-36 54.1517,-36 54.1517,0 108.1517,0 108.1517,-36"/>
+<text text-anchor="middle" x="81.1517" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod5</text>
+</g>
+<!-- c0&#45;&#45;mod5 -->
+<g id="edge2" class="edge">
+<title>c0&#45;&#45;mod5</title>
+<path fill="none" stroke="#000000" d="M87.9389,-287.6259C95.4258,-280.36 103.194,-271.0043 107.1517,-260.7034 140.1004,-174.9471 135.4167,-141.412 107.1517,-54 105.1118,-47.6914 101.5082,-41.5586 97.6218,-36.1955"/>
+<text text-anchor="middle" x="170.7534" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">CC,WHILE,IF</text>
+</g>
+<!-- mod6 -->
+<g id="node3" class="node">
+<title>mod6</title>
+<polygon fill="none" stroke="#000000" points="67.1517,-124.8 13.1517,-124.8 13.1517,-88.8 67.1517,-88.8 67.1517,-124.8"/>
+<text text-anchor="middle" x="40.1517" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">mod6</text>
+</g>
+<!-- c1&#45;&#45;mod6 -->
+<g id="edge3" class="edge">
+<title>c1&#45;&#45;mod6</title>
+<path fill="none" stroke="#000000" d="M26.7998,-177.5785C28.1066,-166.8845 29.8439,-154.1784 31.8915,-142.8 32.9363,-136.9938 34.297,-130.7114 35.6115,-125.045"/>
+<text text-anchor="middle" x="65.7818" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">CC,WHILE</text>
+</g>
+<!-- mod6&#45;&#45;mod5 -->
+<g id="edge4" class="edge">
+<title>mod6&#45;&#45;mod5</title>
+<path fill="none" stroke="#000000" d="M44.3668,-88.6987C47.1429,-78.2649 51.2562,-65.0649 56.6047,-54 59.5676,-47.8704 63.4812,-41.6012 67.3107,-36.0481"/>
+<text text-anchor="middle" x="82.4252" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">IF_XML</text>
+</g>
+</g>
+</svg>

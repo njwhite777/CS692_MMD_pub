@@ -1,0 +1,1 @@
+GENERIC ERROR: the file fmtFileZeroLength.dma_fmt must not be empty (0B size).

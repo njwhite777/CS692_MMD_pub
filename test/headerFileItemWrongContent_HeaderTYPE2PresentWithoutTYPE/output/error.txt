@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: Sorry, the TYPE2 header cannot present without the TYPE.

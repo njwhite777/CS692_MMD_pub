@@ -1,0 +1,3 @@
+graph "./test/dotOneBox/output/" {
+"module1" ["shape"="rectangle","color"="red","style"="filled"]
+}

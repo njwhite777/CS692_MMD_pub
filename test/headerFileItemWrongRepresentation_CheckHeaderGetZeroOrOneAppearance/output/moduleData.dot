@@ -1,0 +1,3 @@
+graph ".\test\headerFileItemWrongRepresentation_CheckHeaderGetZeroOrOneAppearance/output/" {
+"MOD1" ["shape"="rectangle","color"="red","style"="filled"]
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>example_input.dma</filename>
+    <clone_group>
+        <clone_data>
+            <clone_group_process_data>
+                <clone_group_vulnerablility_status>MIXED</clone_group_vulnerablility_status>
+                <clone_group_vulnerablility_category>MIXED</clone_group_vulnerablility_category>
+            </clone_group_process_data>
+            <clone_group_id>c0</clone_group_id>
+            <count_of_clone_group>2</count_of_clone_group>
+        </clone_data>
+        <clone_module>
+            <module_id>
+                <name>Module001</name>
+            </module_id>
+            <module_process_data>
+                <cwe>22</cwe>
+                <vulnerability>0</vulnerability>
+                <category>HASH</category>
+            </module_process_data>
+        </clone_module>
+        <clone_module>
+            <module_id>
+                <name>Module002</name>
+            </module_id>
+            <module_process_data>
+                <cwe>66</cwe>
+                <vulnerability>1</vulnerability>
+                <category>SQLI</category>
+            </module_process_data>
+        </clone_module>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </clone_group>
+    <module>
+        <module_id>
+            <name>Module003</name>
+        </module_id>
+        <process_data>
+            <cwe>89</cwe>
+            <vulnerability>1</vulnerability>
+            <category>XSS</category>
+        </process_data>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <name>Module004</name>
+        </module_id>
+        <process_data>
+            <cwe>89</cwe>
+            <vulnerability>0</vulnerability>
+            <category>XSS</category>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">0</value>
+                <value module="m3">10</value>
+            </metric>
+            <metric>
+                <metric_name>Di</metric_name>
+                <value module="c0">3</value>
+                <value module="m3">8</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e1</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>De</metric_name>
+                <value module="m2">9</value>
+                <value module="m3">8</value>
+            </metric>
+            <metric>
+                <metric_name>IFS</metric_name>
+                <value module="m2">2</value>
+                <value module="m3">1</value>
+            </metric>
+            <metric>
+                <metric_name>COMMENTS</metric_name>
+                <value module="m2">1</value>
+                <value module="m3">0</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

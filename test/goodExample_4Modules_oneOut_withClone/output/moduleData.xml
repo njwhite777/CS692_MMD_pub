@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_4Modules_oneOut_withClone.dma</filename>
+    <clone_group>
+        <clone_data>
+            <clone_group_process_data>
+                <clone_group_vulnerablility_status>0</clone_group_vulnerablility_status>
+                <clone_group_vulnerablility_category>0</clone_group_vulnerablility_category>
+            </clone_group_process_data>
+            <clone_group_id>c0</clone_group_id>
+            <count_of_clone_group>2</count_of_clone_group>
+        </clone_data>
+        <clone_module>
+            <module_id>
+                <id>mod4</id>
+            </module_id>
+            <module_id>
+                <name>module4</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <clone_module>
+            <module_id>
+                <id>mod44</id>
+            </module_id>
+            <module_id>
+                <name>module44</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <distance_connections>
+            <connection_id>e3</connection_id>
+            <connection_id>e2</connection_id>
+        </distance_connections>
+    </clone_group>
+    <module>
+        <module_id>
+            <id>mod1</id>
+        </module_id>
+        <module_id>
+            <name>module1</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod2</id>
+        </module_id>
+        <module_id>
+            <name>module2</name>
+        </module_id>
+        <process_data>
+            <vulnerability>0</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod3</id>
+        </module_id>
+        <module_id>
+            <name>module3</name>
+        </module_id>
+        <process_data>
+            <vulnerability>0</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FOR</metric_name>
+                <value module="m1">1</value>
+                <value module="m2">2</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e1</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">21</value>
+                <value module="m1">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e2</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">1</value>
+                <value module="m1">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="c0">22</value>
+                <value module="m1">21</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e3</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">1</value>
+                <value module="m0">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="c0">22</value>
+                <value module="m0">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

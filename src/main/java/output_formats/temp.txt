@@ -1,0 +1,325 @@
+package mmd;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.NavigableMap;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+import guru.nidi.graphviz.model.MutableNode;
+import guru.nidi.graphviz.attribute.Color;
+import guru.nidi.graphviz.attribute.Shape;
+import guru.nidi.graphviz.attribute.Style;
+import guru.nidi.graphviz.model.Factory;
+
+public class Module {
+	
+	private String _id;
+	private String _clone_id;
+	public String id;
+	public String name;
+	private HashMap<String,Object> idFields;
+	public ArrayList<Object> comparableItems;
+	private ArrayList<String> comparableItemHeaders;
+	private String fileName;
+	private String vulnerabilityCategory;
+	private int vulnerabilityStatus;
+	private NavigableMap<Integer,ArrayList<MetricDiff>> nearestNeighbors;
+	public HashMap<String, Module> connections;
+	private int keepNNearestNeighbors = 2;
+	public MutableNode node;
+	private AtomicInteger cloneNextID;
+	private boolean mixedVulnerability;
+	private AtomicInteger connectionNextID;
+	private int cloneCount;
+	
+	
+	public Module() {
+		this._id = "";
+		this._clone_id = "";
+		this.id = "";
+		this.name = "";
+		this.vulnerabilityCategory = "";
+		this.vulnerabilityStatus = -1;
+		this.idFields = new HashMap<String,Object>();
+		this.comparableItems = new ArrayList<Object>();
+		this.comparableItemHeaders = new ArrayList<String>();
+		this.nearestNeighbors = new TreeMap<Integer,ArrayList<MetricDiff>>();
+		this.connections = new HashMap<String,Module>();
+		this.mixedVulnerability = false;
+		this.connections = new  HashMap<String, Module>();
+		this.fileName = "";
+		this.cloneCount = 0;
+	}
+	
+	public void setIdField(String s,Object o) {
+		idFields.put(s, o);		
+	}
+	
+	public Object getIdField(String s) {
+		if(this.idFields.containsKey(s)) return this.idFields.get(s);
+		else return null;
+	}
+	
+	public HashMap<String, Object> getIdFields() {
+		return this.idFields;
+	}
+	
+	public void addComparableItem(Object item) {
+		this.comparableItems.add(item);
+	}
+	
+	public void addComparableItemHeaders(String header) {
+		this.comparableItemHeaders.add(header);
+	}
+	
+	public String getComparableItemHeader(Integer i) {
+		return this.comparableItemHeaders.get(i);
+	}
+	
+	public ArrayList<String> getComparableItemHeaders() {
+		return this.comparableItemHeaders;
+	}
+		
+	public int difference(Module m) {
+		int count = 0;
+		for(int i=0;i<this.comparableItems.size();i++) {
+			if(!(this.comparableItems.get(i).equals(m.comparableItems.get(i)))) {
+				count++;
+			}
+		}	
+		return count;
+	}
+
+	public String getVulnerabilityType() {
+		return vulnerabilityCategory;
+	}
+
+	public void setVulnerabilityType(String vulnerabilityCategory) {
+		this.vulnerabilityCategory = vulnerabilityCategory;
+	}
+	
+	public void setVulnerabilityStatus(int status) {
+		this.vulnerabilityStatus = status;		
+	}
+	
+	public int getVulnerabilityStatus() {
+		return this.vulnerabilityStatus;
+	}
+	
+	public int getNumberOfComparableMetrics() {
+		return this.comparableItems.size();		
+	}
+	
+
+	public SortedMap<Integer,ArrayList<MetricDiff>> getAllNearestNeigbors() {
+		return (SortedMap<Integer, ArrayList<MetricDiff>>) this.nearestNeighbors;
+	}
+
+	public NavigableMap<Integer, ArrayList<MetricDiff>> getListOfNearestNeigbors() {
+		ArrayList<Integer> ks = new ArrayList<Integer>(this.nearestNeighbors.keySet());
+		if(ks.size() == 0) return new TreeMap<Integer, ArrayList<MetricDiff>>();
+		int firstKey = 0;
+		for(Integer v : ks) {
+			if(!(v == 0)) {
+				firstKey = v;
+				break;
+			}
+		}
+		return (NavigableMap<Integer, ArrayList<MetricDiff>>) this.nearestNeighbors.subMap(firstKey,true,this.nearestNeighbors.lastKey(),true);
+	}
+	
+	public SortedMap<Integer, ArrayList<MetricDiff>> getClones() {
+		return (SortedMap<Integer, ArrayList<MetricDiff>>) this.nearestNeighbors.subMap(0,1);
+	}
+	
+	private void makeCloneNode(Module m1,Module m2) {
+		if(m1._clone_id == "" && m2._clone_id == "") {
+			this.setCloneId();
+			m2._clone_id = this.getCloneId();
+			this.cloneCount+=2;
+		}else if(m2._clone_id == "") {
+			m2._clone_id = m1._clone_id;
+			this.cloneCount++;
+		}else if(m1._clone_id == "") {
+			m1._clone_id = m2._clone_id;
+			this.cloneCount++;
+		}
+		m2._clone_id = m1._clone_id;
+		m2.cloneCount = m1.cloneCount;
+		m2.nearestNeighbors = m1.nearestNeighbors;
+		
+		if(m1.vulnerabilityStatus!=m2.vulnerabilityStatus) {
+			m1.node.add(Color.YELLOW,Style.FILLED);
+			m1.mixedVulnerability = true;
+			m2.mixedVulnerability = true;
+		}
+		m2.node = m1.node;
+		m1.node.add(Shape.DOUBLE_CIRCLE);
+		m1.node.setName(m1._clone_id);
+	}
+	
+	private void removeConnection(String thisID,String otherID) {
+		if(this.connections.containsKey(otherID)) {
+			Module tMod = this.connections.get(otherID);
+			this.connections.remove(otherID);
+			tMod.connections.remove(thisID);
+		}
+	}
+	
+	private void updateAllNeigbors(String thisID,String newID) {
+		for(String neigborKey : this.connections.keySet()) {
+			Module tMod = this.connections.get(neigborKey);
+			if(tMod.connections.containsKey(thisID)) {
+				Module sRef = tMod.connections.get(thisID);
+				tMod.connections.put(newID, sRef);
+				tMod.connections.remove(thisID);
+			}
+		}
+	}
+	
+	public void checkAndAddNeigbor(Module m, HashMap<String, HashMap<String, MetricDiff>> connections) {
+		
+		MetricDiff md = new MetricDiff(this,m);
+		md.setIDObject(this.connectionNextID);
+		
+		for(int j=0;j<this.getNumberOfComparableMetrics();j++) {
+			if(!this.comparableItems.get(j).equals(m.comparableItems.get(j))) {
+				md.addDifference(this.comparableItems.get(j),m.comparableItems.get(j),this.comparableItemHeaders.get(j));
+			}
+		}
+
+		if(this.node == null) this.node = Factory.mutNode(this.name).add(Shape.RECTANGLE);
+		if(m.node == null) m.node = Factory.mutNode(m.name).add(Shape.RECTANGLE);
+
+		if(md.difference == 0) {
+			String thisID = this.getId();
+			String mID = m.getId();
+			this.makeCloneNode(this,m);			
+			if(!thisID.equals(this.getId())) {
+				this.updateAllNeigbors(thisID,this.getId());
+			}
+			if(!mID.equals(m.getId())) {
+				m.updateAllNeigbors(mID,m.getId());
+			}
+		}else {
+			this.connections.put(m.getId(),m);
+			m.connections.put(this.getId(),this);
+			
+			if(!this.nearestNeighbors.containsKey(md.difference)) {			
+				this.nearestNeighbors.put(md.difference,new ArrayList<MetricDiff>());
+				this.nearestNeighbors.get(md.difference).add(md);
+			}else {
+				this.nearestNeighbors.get(md.difference).add(md);
+			}
+			
+			int keepNN=m.keepNNearestNeighbors;
+			if(!this.nearestNeighbors.containsKey(0)) keepNN--;
+			
+			if(this.nearestNeighbors.size() > keepNN) {
+				for(MetricDiff tMDiff : this.nearestNeighbors.get(this.nearestNeighbors.lastKey())) {
+					String mID1 = tMDiff.getModuleIds().get(0);
+					String mID2 = tMDiff.getModuleIds().get(1);
+					String thisID,otherID = "";
+					if(mID1.equals(this.getId())) {
+						thisID = mID1;
+						otherID = mID2;
+					}else if(mID2.equals(this.getId())){
+						thisID = mID2;
+						otherID = mID1;
+					}
+					
+				}
+				this.nearestNeighbors.remove(this.nearestNeighbors.lastKey());	
+			}
+		}
+		
+		if(this.vulnerabilityStatus == 1 && !this.mixedVulnerability) {
+			this.node.add(Color.RED,Style.FILLED);
+		}
+		if(m.vulnerabilityStatus == 1 && !this.mixedVulnerability) {
+			m.node.add(Color.RED,Style.FILLED);
+		}
+	}
+	
+//	private void addNewGlobalConn(Module m1,Module m2,MetricDiff md, HashMap<String, HashMap<String, MetricDiff>> mmdCs) {
+//		if(!mmdCs.containsKey(m1.getId())) {
+//			mmdCs.put(m1.getId(),new HashMap<String,MetricDiff>());
+//			mmdCs.get(m1.getId()).put(m2.getId(),md);
+//		}else if(mmdCs.containsKey(m1.getId()) && !mmdCs.get(m1.getId()).containsKey(m2.getId())) {
+//			mmdCs.get(m1.getId()).put(m2.getId(),md);
+//		}
+//	}
+//	
+//	private boolean inGlobalConnections(Module m1,Module m2, HashMap<String, HashMap<String, MetricDiff>> mmdCs) {
+//		return inGlobalConnHelper(m2, m1, mmdCs) || inGlobalConnHelper(m1, m2, mmdCs);
+//	}
+//	
+//	private boolean inGlobalConnHelper(Module m1,Module m2, HashMap<String, HashMap<String, MetricDiff>> mmdCs) {
+//		if(mmdCs.containsKey(m1.getId()) && mmdCs.get(m1.getId()).containsKey(m2.getId())) {
+//			return true;
+//		}else if(mmdCs.containsKey(m2.getId()) && mmdCs.get(m2.getId()).containsKey(m1.getId())) {
+//			return true;
+//		}
+//		return false;
+//	}
+	
+	
+	public void setCloneId() {
+		this._clone_id = "c"+this.cloneNextID.getAndIncrement();
+	}
+
+	public String getCloneId() {
+		return this._clone_id;
+	}
+	
+	public String getId(boolean skipClone) {
+		if(!skipClone) return this._clone_id;
+		return this._id;
+	}
+
+	public String getId() {
+		if(this.isClone())
+			return this._clone_id;
+		
+		return this._id;
+	}
+
+
+	public boolean isClone() {
+		return !(this._clone_id == "");
+	}
+	
+	public int getCloneCount() {
+		return cloneCount;
+	}
+
+	public void setModuleID(int id) {
+		this._id = "m" + id;
+	}
+
+	public void setCloneID(int id) {
+		this._clone_id = "c" + id;		
+	}
+
+	public void setCloneObject(AtomicInteger cloneNextID) {
+		this.cloneNextID = cloneNextID;
+	}
+	public void setConnectionIDObject(AtomicInteger connectionNextID) {
+		this.connectionNextID =  connectionNextID;
+	}
+
+	public void setFileName(String nameOfDataAndFormatFile) {
+		this.fileName = nameOfDataAndFormatFile + ".dma";		
+	}
+	
+	public String getFileName() {
+		return this.fileName;
+	}
+}

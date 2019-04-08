@@ -1,0 +1,3 @@
+graph "./test/goodExample_mixedClone_multipleCWE/output/" {
+"c0" ["shape"="doublecircle","color"="orange","style"="filled"]
+}

@@ -1,0 +1,5 @@
+graph "./test/goodExample_SingleClone/output/" {
+"c0" ["shape"="doublecircle"]
+"mod3" ["shape"="rectangle"]
+"c0" -- "mod3" ["label"="CC,IF_XML"]
+}

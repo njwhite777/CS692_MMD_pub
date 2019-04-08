@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: CLONE_TYPE is INT type format and only have value 0 and 1. Please Check data file at line (0),column(5)

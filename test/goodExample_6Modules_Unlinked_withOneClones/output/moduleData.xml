@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_6Modules_Unlinked_withOneClones.dma</filename>
+    <clone_group>
+        <clone_data>
+            <clone_group_process_data>
+                <clone_group_vulnerablility_status>0</clone_group_vulnerablility_status>
+                <clone_group_vulnerablility_category>0</clone_group_vulnerablility_category>
+            </clone_group_process_data>
+            <clone_group_id>c0</clone_group_id>
+            <count_of_clone_group>2</count_of_clone_group>
+        </clone_data>
+        <clone_module>
+            <module_id>
+                <id>mod2</id>
+            </module_id>
+            <module_id>
+                <name>module2</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <clone_module>
+            <module_id>
+                <id>mod3</id>
+            </module_id>
+            <module_id>
+                <name>module3</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+        </distance_connections>
+    </clone_group>
+    <module>
+        <module_id>
+            <id>mod1</id>
+        </module_id>
+        <module_id>
+            <name>module1</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e8</connection_id>
+            <connection_id>e4</connection_id>
+            <connection_id>e3</connection_id>
+            <connection_id>e2</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod4</id>
+        </module_id>
+        <module_id>
+            <name>module4</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e8</connection_id>
+            <connection_id>e7</connection_id>
+            <connection_id>e6</connection_id>
+            <connection_id>e5</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod5</id>
+        </module_id>
+        <module_id>
+            <name>module5</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod6</id>
+        </module_id>
+        <module_id>
+            <name>module6</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e5</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">8</value>
+                <value module="m3">3</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="c0">8</value>
+                <value module="m3">3</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="c0">8</value>
+                <value module="m3">3</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="c0">1</value>
+                <value module="m3">3</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="c0">8</value>
+                <value module="m3">6</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="c0">2</value>
+                <value module="m3">21</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e6</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="m3">5</value>
+                <value module="m5">8</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="m3">5</value>
+                <value module="m5">8</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="m3">5</value>
+                <value module="m5">8</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m3">5</value>
+                <value module="m5">1</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="m3">6</value>
+                <value module="m5">8</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m3">26</value>
+                <value module="m5">2</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e7</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="m3">5</value>
+                <value module="m4">8</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="m3">5</value>
+                <value module="m4">8</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="m3">5</value>
+                <value module="m4">8</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m3">5</value>
+                <value module="m4">1</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="m3">5</value>
+                <value module="m4">8</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m3">26</value>
+                <value module="m4">2</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e8</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="m0">8</value>
+                <value module="m3">2</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="m0">8</value>
+                <value module="m3">2</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="m0">8</value>
+                <value module="m3">2</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m0">1</value>
+                <value module="m3">2</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="m0">8</value>
+                <value module="m3">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">2</value>
+                <value module="m3">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="m4">6</value>
+                <value module="m5">5</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e1</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">5</value>
+                <value module="m5">3</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="c0">5</value>
+                <value module="m5">3</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="c0">5</value>
+                <value module="m5">3</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="c0">5</value>
+                <value module="m5">3</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="c0">26</value>
+                <value module="m5">21</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e2</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">3</value>
+                <value module="m0">2</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="c0">3</value>
+                <value module="m0">2</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="c0">3</value>
+                <value module="m0">2</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="c0">3</value>
+                <value module="m0">2</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="c0">6</value>
+                <value module="m0">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="c0">21</value>
+                <value module="m0">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e3</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="m0">5</value>
+                <value module="m5">2</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="m0">5</value>
+                <value module="m5">2</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="m0">5</value>
+                <value module="m5">2</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m0">5</value>
+                <value module="m5">2</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="m0">6</value>
+                <value module="m5">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">26</value>
+                <value module="m5">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e4</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="m0">5</value>
+                <value module="m4">2</value>
+            </metric>
+            <metric>
+                <metric_name>OR</metric_name>
+                <value module="m0">5</value>
+                <value module="m4">2</value>
+            </metric>
+            <metric>
+                <metric_name>AND</metric_name>
+                <value module="m0">5</value>
+                <value module="m4">2</value>
+            </metric>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m0">5</value>
+                <value module="m4">2</value>
+            </metric>
+            <metric>
+                <metric_name>TRY</metric_name>
+                <value module="m0">5</value>
+                <value module="m4">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">26</value>
+                <value module="m4">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

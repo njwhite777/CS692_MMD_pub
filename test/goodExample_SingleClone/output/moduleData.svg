@@ -1,0 +1,26 @@
+<svg width="108pt" height="145pt"
+ viewBox="0.00 0.00 107.72 145.10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 141.1034)">
+<title>./test/goodExample_SingleClone/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-141.1034 103.7202,-141.1034 103.7202,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="none" stroke="#000000" cx="27" cy="-112.9517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="27" cy="-112.9517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="27" y="-108.7517" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+<!-- mod3 -->
+<g id="node2" class="node">
+<title>mod3</title>
+<polygon fill="none" stroke="#000000" points="54,-36 0,-36 0,0 54,0 54,-36"/>
+<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod3</text>
+</g>
+<!-- c0&#45;&#45;mod3 -->
+<g id="edge1" class="edge">
+<title>c0&#45;&#45;mod3</title>
+<path fill="none" stroke="#000000" d="M27,-88.4993C27,-72.1247 27,-50.9288 27,-36.0709"/>
+<text text-anchor="middle" x="63.3601" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">CC,IF_XML</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+graph "./test/goodExample_2clones/output/" {
+"c0" ["shape"="doublecircle"]
+"c1" ["shape"="doublecircle"]
+"mod6" ["shape"="rectangle"]
+"mod5" ["shape"="rectangle"]
+"c0" -- "c1" ["label"="CC,IF,IF_XML"]
+"c0" -- "mod5" ["label"="CC,WHILE,IF"]
+"c1" -- "mod6" ["label"="CC,WHILE"]
+"mod6" -- "mod5" ["label"="IF_XML"]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>dotOneBox_vuln.dma</filename>
+    <module>
+        <module_id>
+            <name>module1</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+    </module>
+</mmd>

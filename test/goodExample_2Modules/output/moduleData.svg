@@ -1,0 +1,25 @@
+<svg width="62pt" height="133pt"
+ viewBox="0.00 0.00 62.00 132.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 128.8)">
+<title>./test/goodExample_2Modules/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-128.8 58,-128.8 58,4 -4,4"/>
+<!-- mod1 -->
+<g id="node1" class="node">
+<title>mod1</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="54,-124.8 0,-124.8 0,-88.8 54,-88.8 54,-124.8"/>
+<text text-anchor="middle" x="27" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">mod1</text>
+</g>
+<!-- mod2 -->
+<g id="node2" class="node">
+<title>mod2</title>
+<polygon fill="none" stroke="#000000" points="54,-36 0,-36 0,0 54,0 54,-36"/>
+<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod2</text>
+</g>
+<!-- mod1&#45;&#45;mod2 -->
+<g id="edge1" class="edge">
+<title>mod1&#45;&#45;mod2</title>
+<path fill="none" stroke="#000000" d="M27,-88.4006C27,-73.0587 27,-51.322 27,-36.072"/>
+<text text-anchor="middle" x="33.2216" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">IF</text>
+</g>
+</g>
+</svg>

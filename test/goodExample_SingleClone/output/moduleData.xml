@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_SingleClone.dma</filename>
+    <clone_group>
+        <clone_data>
+            <clone_group_process_data>
+                <clone_group_vulnerablility_status>0</clone_group_vulnerablility_status>
+                <clone_group_vulnerablility_category>0</clone_group_vulnerablility_category>
+            </clone_group_process_data>
+            <clone_group_id>c0</clone_group_id>
+            <count_of_clone_group>2</count_of_clone_group>
+        </clone_data>
+        <clone_module>
+            <module_id>
+                <id>mod1</id>
+            </module_id>
+            <module_id>
+                <name>module1</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <clone_module>
+            <module_id>
+                <id>mod2</id>
+            </module_id>
+            <module_id>
+                <name>module2</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </clone_group>
+    <module>
+        <module_id>
+            <id>mod3</id>
+        </module_id>
+        <module_id>
+            <name>module3</name>
+        </module_id>
+        <process_data>
+            <vulnerability>0</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>CC</metric_name>
+                <value module="c0">3</value>
+                <value module="m2">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF_XML</metric_name>
+                <value module="c0">3</value>
+                <value module="m2">2</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

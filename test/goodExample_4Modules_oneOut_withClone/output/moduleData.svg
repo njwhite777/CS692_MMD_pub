@@ -1,0 +1,56 @@
+<svg width="143pt" height="234pt"
+ viewBox="0.00 0.00 142.62 233.90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 229.9034)">
+<title>./test/goodExample_4Modules_oneOut_withClone/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-229.9034 138.6164,-229.9034 138.6164,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="none" stroke="#000000" cx="73" cy="-201.7517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="73" cy="-201.7517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="73" y="-197.5517" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+<!-- mod2 -->
+<g id="node2" class="node">
+<title>mod2</title>
+<polygon fill="none" stroke="#000000" points="68,-124.8 14,-124.8 14,-88.8 68,-88.8 68,-124.8"/>
+<text text-anchor="middle" x="41" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">mod2</text>
+</g>
+<!-- c0&#45;&#45;mod2 -->
+<g id="edge1" class="edge">
+<title>c0&#45;&#45;mod2</title>
+<path fill="none" stroke="#000000" d="M63.1273,-179.6465C60.4416,-173.2446 57.6513,-166.201 55.3836,-159.6 51.4942,-148.2786 47.949,-135.311 45.3514,-125.0602"/>
+<text text-anchor="middle" x="73.3082" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">CC,IF</text>
+</g>
+<!-- mod1 -->
+<g id="node4" class="node">
+<title>mod1</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="128,-36 74,-36 74,0 128,0 128,-36"/>
+<text text-anchor="middle" x="101" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod1</text>
+</g>
+<!-- c0&#45;&#45;mod1 -->
+<g id="edge2" class="edge">
+<title>c0&#45;&#45;mod1</title>
+<path fill="none" stroke="#000000" d="M83.3056,-179.8524C85.9096,-173.4537 88.414,-166.3603 90,-159.6 100.1937,-116.1499 101.4717,-63.3561 101.3456,-36.1515"/>
+<text text-anchor="middle" x="117.3082" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">CC,IF</text>
+</g>
+<!-- mod3 -->
+<g id="node3" class="node">
+<title>mod3</title>
+<polygon fill="none" stroke="#000000" points="54,-36 0,-36 0,0 54,0 54,-36"/>
+<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod3</text>
+</g>
+<!-- mod2&#45;&#45;mod3 -->
+<g id="edge3" class="edge">
+<title>mod2&#45;&#45;mod3</title>
+<path fill="none" stroke="#000000" d="M32.9072,-88.4523C30.826,-82.8908 28.8669,-76.6921 27.7742,-70.8 25.6679,-59.4424 25.4474,-46.4742 25.7667,-36.2322"/>
+<text text-anchor="middle" x="41.6129" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">FOR</text>
+</g>
+<!-- mod2&#45;&#45;mod1 -->
+<g id="edge4" class="edge">
+<title>mod2&#45;&#45;mod1</title>
+<path fill="none" stroke="#000000" d="M53.432,-88.4006C63.7982,-73.0587 78.4851,-51.322 88.7892,-36.072"/>
+<text text-anchor="middle" x="83.2216" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">IF</text>
+</g>
+</g>
+</svg>

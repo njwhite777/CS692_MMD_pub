@@ -1,0 +1,46 @@
+<svg width="96pt" height="259pt"
+ viewBox="0.00 0.00 95.82 258.51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 254.5102)">
+<title>./test/goodExample_3clones/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-254.5102 91.8249,-254.5102 91.8249,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="none" stroke="#000000" cx="54.1517" cy="-226.3585" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="54.1517" cy="-226.3585" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="54.1517" y="-222.1585" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+<!-- c2 -->
+<g id="node2" class="node">
+<title>c2</title>
+<ellipse fill="none" stroke="#000000" cx="24.1517" cy="-125.2551" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="24.1517" cy="-125.2551" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="24.1517" y="-121.0551" font-family="Times,serif" font-size="14.00" fill="#000000">c2</text>
+</g>
+<!-- c0&#45;&#45;c2 -->
+<g id="edge1" class="edge">
+<title>c0&#45;&#45;c2</title>
+<path fill="none" stroke="#000000" d="M47.2691,-203.1633C42.4254,-186.8396 35.9657,-165.0697 31.1062,-148.6924"/>
+<text text-anchor="middle" x="50.4883" y="-171.6068" font-family="Times,serif" font-size="14.00" fill="#000000">CC</text>
+</g>
+<!-- c1 -->
+<g id="node3" class="node">
+<title>c1</title>
+<ellipse fill="none" stroke="#000000" cx="54.1517" cy="-24.1517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#000000" cx="54.1517" cy="-24.1517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="54.1517" y="-19.9517" font-family="Times,serif" font-size="14.00" fill="#000000">c1</text>
+</g>
+<!-- c2&#45;&#45;c1 -->
+<g id="edge2" class="edge">
+<title>c2&#45;&#45;c1</title>
+<path fill="none" stroke="#000000" d="M31.0343,-102.0599C35.878,-85.7362 42.3377,-63.9663 47.1972,-47.589"/>
+<text text-anchor="middle" x="50.4883" y="-70.5034" font-family="Times,serif" font-size="14.00" fill="#000000">CC</text>
+</g>
+<!-- c1&#45;&#45;c0 -->
+<g id="edge3" class="edge">
+<title>c1&#45;&#45;c0</title>
+<path fill="none" stroke="#000000" d="M60.7377,-47.6101C62.1515,-53.6517 63.435,-60.1779 64.1517,-66.3034 70.2409,-118.3499 70.2409,-132.1603 64.1517,-184.2068 63.435,-190.3323 62.1515,-196.8585 60.7377,-202.9001"/>
+<text text-anchor="middle" x="78.4883" y="-121.0551" font-family="Times,serif" font-size="14.00" fill="#000000">CC</text>
+</g>
+</g>
+</svg>

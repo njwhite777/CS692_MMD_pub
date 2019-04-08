@@ -1,0 +1,3 @@
+graph "./test/goodExample_clone_mixed/output/" {
+"c0" ["shape"="doublecircle","color"="yellow","style"="filled"]
+}

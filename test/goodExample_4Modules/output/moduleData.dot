@@ -1,0 +1,9 @@
+graph "./test/goodExample_4Modules/output/" {
+"mod1" ["shape"="rectangle","color"="red","style"="filled"]
+"mod2" ["shape"="rectangle"]
+"mod3" ["shape"="rectangle"]
+"mod4" ["shape"="rectangle"]
+"mod1" -- "mod2" ["label"="IF"]
+"mod2" -- "mod3" ["label"="FOR"]
+"mod3" -- "mod4" ["label"="IF"]
+}

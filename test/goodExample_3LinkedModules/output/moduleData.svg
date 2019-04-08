@@ -1,0 +1,43 @@
+<svg width="160pt" height="222pt"
+ viewBox="0.00 0.00 160.03 221.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 217.6)">
+<title>./test/goodExample_3LinkedModules/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-217.6 156.0302,-217.6 156.0302,4 -4,4"/>
+<!-- mod1 -->
+<g id="node1" class="node">
+<title>mod1</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="85,-213.6 31,-213.6 31,-177.6 85,-177.6 85,-213.6"/>
+<text text-anchor="middle" x="58" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">mod1</text>
+</g>
+<!-- mod3 -->
+<g id="node2" class="node">
+<title>mod3</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="54,-124.8 0,-124.8 0,-88.8 54,-88.8 54,-124.8"/>
+<text text-anchor="middle" x="27" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">mod3</text>
+</g>
+<!-- mod1&#45;&#45;mod3 -->
+<g id="edge1" class="edge">
+<title>mod1&#45;&#45;mod3</title>
+<path fill="none" stroke="#000000" d="M33.5168,-177.3187C28.4245,-172.2008 23.7614,-166.2074 20.9698,-159.6 16.3736,-148.7215 17.8812,-135.5215 20.5378,-125.0411"/>
+<text text-anchor="middle" x="51.5151" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">WHILE,IF</text>
+</g>
+<!-- mod2 -->
+<g id="node3" class="node">
+<title>mod2</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="89,-36 35,-36 35,0 89,0 89,-36"/>
+<text text-anchor="middle" x="62" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">mod2</text>
+</g>
+<!-- mod1&#45;&#45;mod2 -->
+<g id="edge2" class="edge">
+<title>mod1&#45;&#45;mod2</title>
+<path fill="none" stroke="#000000" d="M73.2178,-177.238C76.8053,-171.8742 80.128,-165.7828 82,-159.6 95.6005,-114.6805 93.7728,-99.4328 82,-54 80.4218,-47.9094 77.5653,-41.7522 74.4958,-36.2938"/>
+<text text-anchor="middle" x="121.5151" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">WHILE,IF</text>
+</g>
+<!-- mod3&#45;&#45;mod2 -->
+<g id="edge3" class="edge">
+<title>mod3&#45;&#45;mod2</title>
+<path fill="none" stroke="#000000" d="M28.4937,-88.657C29.8176,-78.2094 32.2959,-65.0094 36.913,-54 39.5056,-47.8179 43.2802,-41.6321 47.1178,-36.1756"/>
+<text text-anchor="middle" x="58.5435" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">WHILE</text>
+</g>
+</g>
+</svg>

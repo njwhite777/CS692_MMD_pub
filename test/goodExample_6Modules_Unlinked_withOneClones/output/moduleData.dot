@@ -1,0 +1,16 @@
+graph "./test/goodExample_6Modules_Unlinked_withOneClones/output/" {
+"c0" ["shape"="doublecircle"]
+"mod6" ["shape"="rectangle","color"="red","style"="filled"]
+"mod5" ["shape"="rectangle","color"="red","style"="filled"]
+"mod1" ["shape"="rectangle","color"="red","style"="filled"]
+"mod4" ["shape"="rectangle","color"="red","style"="filled"]
+"c0" -- "mod6" ["label"="CC,OR,AND,WHILE,IF"]
+"mod6" -- "mod5" ["label"="TRY"]
+"mod1" -- "c0" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+"mod1" -- "mod6" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+"mod1" -- "mod5" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+"mod1" -- "mod4" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+"mod4" -- "c0" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+"mod4" -- "mod6" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+"mod4" -- "mod5" ["label"="CC,OR,AND,WHILE,TRY,IF"]
+}

@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: Sorry, there must be at least one identification field((NAME,ID,DMA_ID,XML_ID,CLONE_ID,TEST_NUMBER)).

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_clone_mixed.dma</filename>
+    <clone_group>
+        <clone_data>
+            <clone_group_process_data>
+                <clone_group_vulnerablility_status>MIXED</clone_group_vulnerablility_status>
+                <clone_group_vulnerablility_category>0</clone_group_vulnerablility_category>
+            </clone_group_process_data>
+            <clone_group_id>c0</clone_group_id>
+            <count_of_clone_group>2</count_of_clone_group>
+        </clone_data>
+        <clone_module>
+            <module_id>
+                <id>mod1</id>
+            </module_id>
+            <module_id>
+                <name>module1</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>1</vulnerability>
+            </module_process_data>
+        </clone_module>
+        <clone_module>
+            <module_id>
+                <id>mod2</id>
+            </module_id>
+            <module_id>
+                <name>module2</name>
+            </module_id>
+            <module_process_data>
+                <vulnerability>0</vulnerability>
+            </module_process_data>
+        </clone_module>
+    </clone_group>
+</mmd>

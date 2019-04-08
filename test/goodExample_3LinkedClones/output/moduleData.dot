@@ -1,0 +1,8 @@
+graph "./test/goodExample_3LinkedClones/output/" {
+"c0" ["shape"="doublecircle"]
+"c2" ["shape"="doublecircle"]
+"c1" ["shape"="doublecircle"]
+"c0" -- "c2" ["label"="CC"]
+"c2" -- "c1" ["label"="CC"]
+"c1" -- "c0" ["label"="CC"]
+}

@@ -1,0 +1,7 @@
+graph "./test/example_input/output/" {
+"c0" ["shape"="doublecircle","color"="orange","style"="filled"]
+"Module004" ["shape"="rectangle"]
+"Module003" ["shape"="rectangle","color"="red","style"="filled"]
+"c0" -- "Module004" ["label"="CC,Di"]
+"Module003" -- "Module004" ["label"="De,IFS,COMMENTS"]
+}

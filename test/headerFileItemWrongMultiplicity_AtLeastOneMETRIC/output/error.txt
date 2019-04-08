@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: Sorry, the metric header must appear at least once

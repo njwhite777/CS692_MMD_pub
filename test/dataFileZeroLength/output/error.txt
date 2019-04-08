@@ -1,0 +1,1 @@
+GENERIC ERROR: the file dataFileZeroLength.dma must not be empty (0B size).

@@ -1,0 +1,38 @@
+<svg width="221pt" height="145pt"
+ viewBox="0.00 0.00 221.03 145.10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 141.1034)">
+<title>./test/example_input/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-141.1034 217.0255,-141.1034 217.0255,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="#ffa500" stroke="#ffa500" cx="24.1517" cy="-112.9517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#ffa500" cx="24.1517" cy="-112.9517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="24.1517" y="-108.7517" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+<!-- Module004 -->
+<g id="node2" class="node">
+<title>Module004</title>
+<polygon fill="none" stroke="#000000" points="105.2027,-36 25.1006,-36 25.1006,0 105.2027,0 105.2027,-36"/>
+<text text-anchor="middle" x="65.1517" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">Module004</text>
+</g>
+<!-- c0&#45;&#45;Module004 -->
+<g id="edge1" class="edge">
+<title>c0&#45;&#45;Module004</title>
+<path fill="none" stroke="#000000" d="M32.8856,-90.4225C37.2613,-79.3792 42.7341,-65.9227 47.9813,-54 50.5475,-48.1692 53.4868,-41.8798 56.1996,-36.2146"/>
+<text text-anchor="middle" x="65.2369" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">CC,Di</text>
+</g>
+<!-- Module003 -->
+<g id="node3" class="node">
+<title>Module003</title>
+<polygon fill="#ff0000" stroke="#ff0000" points="146.2027,-130.9517 66.1006,-130.9517 66.1006,-94.9517 146.2027,-94.9517 146.2027,-130.9517"/>
+<text text-anchor="middle" x="106.1517" y="-108.7517" font-family="Times,serif" font-size="14.00" fill="#000000">Module003</text>
+</g>
+<!-- Module003&#45;&#45;Module004 -->
+<g id="edge2" class="edge">
+<title>Module003&#45;&#45;Module004</title>
+<path fill="none" stroke="#000000" d="M100.0961,-94.9107C95.9722,-83.1154 90.184,-67.4574 84.1517,-54 81.4922,-48.0671 78.2904,-41.7491 75.2795,-36.0889"/>
+<text text-anchor="middle" x="151.5886" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">De,IFS,COMMENTS</text>
+</g>
+</g>
+</svg>

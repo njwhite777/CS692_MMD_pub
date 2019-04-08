@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_4Modules_oneOut.dma</filename>
+    <module>
+        <module_id>
+            <id>mod1</id>
+        </module_id>
+        <module_id>
+            <name>module1</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+            <connection_id>e3</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod2</id>
+        </module_id>
+        <module_id>
+            <name>module2</name>
+        </module_id>
+        <process_data>
+            <vulnerability>0</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+            <connection_id>e0</connection_id>
+            <connection_id>e2</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod3</id>
+        </module_id>
+        <module_id>
+            <name>module3</name>
+        </module_id>
+        <process_data>
+            <vulnerability>0</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod4</id>
+        </module_id>
+        <module_id>
+            <name>module4</name>
+        </module_id>
+        <process_data>
+            <vulnerability>0</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e3</connection_id>
+            <connection_id>e2</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FOR</metric_name>
+                <value module="m1">1</value>
+                <value module="m2">2</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e1</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">21</value>
+                <value module="m1">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e2</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m1">22</value>
+                <value module="m3">21</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e3</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">22</value>
+                <value module="m3">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

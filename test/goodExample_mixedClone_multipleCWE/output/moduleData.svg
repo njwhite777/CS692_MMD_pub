@@ -1,0 +1,14 @@
+<svg width="56pt" height="56pt"
+ viewBox="0.00 0.00 56.30 56.30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 52.3034)">
+<title>./test/goodExample_mixedClone_multipleCWE/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-52.3034 52.3034,-52.3034 52.3034,4 -4,4"/>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<ellipse fill="#ffa500" stroke="#ffa500" cx="24.1517" cy="-24.1517" rx="20.2791" ry="20.2791"/>
+<ellipse fill="none" stroke="#ffa500" cx="24.1517" cy="-24.1517" rx="24.3044" ry="24.3044"/>
+<text text-anchor="middle" x="24.1517" y="-19.9517" font-family="Times,serif" font-size="14.00" fill="#000000">c0</text>
+</g>
+</g>
+</svg>

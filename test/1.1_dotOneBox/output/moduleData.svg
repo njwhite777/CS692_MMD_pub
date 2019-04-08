@@ -1,0 +1,13 @@
+<svg width="73pt" height="44pt"
+ viewBox="0.00 0.00 73.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>./test/1.1_dotOneBox/output/</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-40 68.9958,-40 68.9958,4 -4,4"/>
+<!-- module1 -->
+<g id="node1" class="node">
+<title>module1</title>
+<polygon fill="none" stroke="#000000" points="64.9937,-36 .0021,-36 .0021,0 64.9937,0 64.9937,-36"/>
+<text text-anchor="middle" x="32.4979" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">module1</text>
+</g>
+</g>
+</svg>

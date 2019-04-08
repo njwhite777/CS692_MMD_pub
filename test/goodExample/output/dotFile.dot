@@ -1,0 +1,5 @@
+graph 1 1.2454 1.7333
+node module1 0.62268 1.4833 1.2454 0.5 module1 filled ellipse red red
+node module2 0.62268 0.25 1.2454 0.5 module2 solid ellipse black lightgrey
+edge module1 module2 4 0.62268 1.2278 0.62268 1.0147 0.62268 0.71281 0.62268 0.501 IF 0.70909 0.86667 solid black
+stop

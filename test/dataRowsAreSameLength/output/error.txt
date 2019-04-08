@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: Sorry, the data file must maintain a consistent row length. Examine row 2

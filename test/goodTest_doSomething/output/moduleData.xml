@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodTest_doSomething.dma</filename>
+    <module>
+        <module_id>
+            <clone_id>16</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>17</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>36</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e2</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>14</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e3</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>37</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e4</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>15</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e5</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>34</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e6</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>35</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e7</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>32</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e8</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>33</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e9</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>30</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e4</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>31</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e10</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>28</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e11</connection_id>
+            <connection_id>e14</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>29</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e15</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>47</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e1</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>46</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e16</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>45</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e17</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>44</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e18</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>43</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e15</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>42</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>41</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e5</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>40</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e12</connection_id>
+            <connection_id>e13</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>27</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e17</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>39</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e3</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>38</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e11</connection_id>
+            <connection_id>e12</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>25</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e10</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>26</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e14</connection_id>
+            <connection_id>e13</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>23</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e8</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>24</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e16</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>21</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e6</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>22</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e2</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>19</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e7</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>20</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e9</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <clone_id>18</clone_id>
+        </module_id>
+        <process_data/>
+        <distance_connections>
+            <connection_id>e18</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e11</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>DE</metric_name>
+                <value module="m9">211</value>
+                <value module="m19">255</value>
+            </metric>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m9">1</value>
+                <value module="m19">2</value>
+            </metric>
+            <metric>
+                <metric_name>DATA_OUT</metric_name>
+                <value module="m9">14</value>
+                <value module="m19">15</value>
+            </metric>
+            <metric>
+                <metric_name>D(G)</metric_name>
+                <value module="m9">238</value>
+                <value module="m19">282</value>
+            </metric>
+            <metric>
+                <metric_name>DATA_IN</metric_name>
+                <value module="m9">14</value>
+                <value module="m19">15</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e10</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m16">0</value>
+                <value module="m22">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e13</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>DE</metric_name>
+                <value module="m7">211</value>
+                <value module="m21">255</value>
+            </metric>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m7">1</value>
+                <value module="m21">2</value>
+            </metric>
+            <metric>
+                <metric_name>DATA_OUT</metric_name>
+                <value module="m7">14</value>
+                <value module="m21">15</value>
+            </metric>
+            <metric>
+                <metric_name>D(G)</metric_name>
+                <value module="m7">239</value>
+                <value module="m21">283</value>
+            </metric>
+            <metric>
+                <metric_name>DATA_IN</metric_name>
+                <value module="m7">14</value>
+                <value module="m21">15</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e12</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>DI</metric_name>
+                <value module="m7">27</value>
+                <value module="m9">28</value>
+            </metric>
+            <metric>
+                <metric_name>VARIABLE_DEC</metric_name>
+                <value module="m7">10</value>
+                <value module="m9">11</value>
+            </metric>
+            <metric>
+                <metric_name>D(G)</metric_name>
+                <value module="m7">282</value>
+                <value module="m9">283</value>
+            </metric>
+            <metric>
+                <metric_name>FIELD_DECLS</metric_name>
+                <value module="m7">10</value>
+                <value module="m9">11</value>
+            </metric>
+            <metric>
+                <metric_name>DSM</metric_name>
+                <value module="m7">11</value>
+                <value module="m9">12</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e15</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m4">0</value>
+                <value module="m18">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e14</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>DI</metric_name>
+                <value module="m19">28</value>
+                <value module="m21">27</value>
+            </metric>
+            <metric>
+                <metric_name>VARIABLE_DEC</metric_name>
+                <value module="m19">11</value>
+                <value module="m21">10</value>
+            </metric>
+            <metric>
+                <metric_name>D(G)</metric_name>
+                <value module="m19">239</value>
+                <value module="m21">238</value>
+            </metric>
+            <metric>
+                <metric_name>FIELD_DECLS</metric_name>
+                <value module="m19">11</value>
+                <value module="m21">10</value>
+            </metric>
+            <metric>
+                <metric_name>DSM</metric_name>
+                <value module="m19">12</value>
+                <value module="m21">11</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e17</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m2">0</value>
+                <value module="m20">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m5">0</value>
+                <value module="m31">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e16</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m1">0</value>
+                <value module="m23">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e1</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m0">0</value>
+                <value module="m30">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e2</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m11">0</value>
+                <value module="m25">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e18</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>DE</metric_name>
+                <value module="m3">6</value>
+                <value module="m29">13</value>
+            </metric>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m3">1</value>
+                <value module="m29">2</value>
+            </metric>
+            <metric>
+                <metric_name>DATA_OUT</metric_name>
+                <value module="m3">2</value>
+                <value module="m29">3</value>
+            </metric>
+            <metric>
+                <metric_name>D(G)</metric_name>
+                <value module="m3">12</value>
+                <value module="m29">19</value>
+            </metric>
+            <metric>
+                <metric_name>DATA_IN</metric_name>
+                <value module="m3">2</value>
+                <value module="m29">3</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e3</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m8">0</value>
+                <value module="m33">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e4</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m10">0</value>
+                <value module="m17">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e5</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m6">0</value>
+                <value module="m32">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e6</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m13">0</value>
+                <value module="m26">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e7</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m12">0</value>
+                <value module="m28">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e8</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m15">0</value>
+                <value module="m24">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e9</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>FANIN</metric_name>
+                <value module="m14">0</value>
+                <value module="m27">1</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

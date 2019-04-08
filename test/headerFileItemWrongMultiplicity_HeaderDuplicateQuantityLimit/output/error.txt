@@ -1,0 +1,1 @@
+GENERIC EXCEPTION: Sorry,ENUM header can only appear once.

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mmd SYSTEM "roles.dtd">
+<mmd>
+    <filename>goodExample_3LinkedModules.dma</filename>
+    <module>
+        <module_id>
+            <id>mod1</id>
+        </module_id>
+        <module_id>
+            <name>module1</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e2</connection_id>
+            <connection_id>e1</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod2</id>
+        </module_id>
+        <module_id>
+            <name>module2</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <module>
+        <module_id>
+            <id>mod3</id>
+        </module_id>
+        <module_id>
+            <name>module3</name>
+        </module_id>
+        <process_data>
+            <vulnerability>1</vulnerability>
+        </process_data>
+        <distance_connections>
+            <connection_id>e0</connection_id>
+        </distance_connections>
+    </module>
+    <connection>
+        <connection_id>e0</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m1">6</value>
+                <value module="m2">4</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e1</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m0">6</value>
+                <value module="m2">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">21</value>
+                <value module="m2">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+    <connection>
+        <connection_id>e2</connection_id>
+        <list_of_metrics>
+            <metric>
+                <metric_name>WHILE</metric_name>
+                <value module="m0">4</value>
+                <value module="m1">2</value>
+            </metric>
+            <metric>
+                <metric_name>IF</metric_name>
+                <value module="m0">21</value>
+                <value module="m1">20</value>
+            </metric>
+        </list_of_metrics>
+    </connection>
+</mmd>

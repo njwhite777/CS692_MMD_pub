@@ -1,0 +1,7 @@
+graph "./test/goodExample_3Modules/output/" {
+"module1" ["shape"="rectangle","color"="red","style"="filled"]
+"module2" ["shape"="rectangle"]
+"module3" ["shape"="rectangle"]
+"module1" -- "module2" ["label"="IF"]
+"module2" -- "module3" ["label"="FOR"]
+}

@@ -1,0 +1,3 @@
+graph "./test/goodExample_SingleModule/output/" {
+"mod1" ["shape"="rectangle","color"="red","style"="filled"]
+}

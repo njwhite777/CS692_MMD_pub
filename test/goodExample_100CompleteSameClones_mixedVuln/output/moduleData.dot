@@ -1,0 +1,3 @@
+graph "./test/goodExample_100CompleteSameClones_mixedVuln/output/" {
+"c0" ["shape"="doublecircle","color"="orange","style"="filled"]
+}
