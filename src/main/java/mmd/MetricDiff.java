@@ -26,18 +26,7 @@ public class MetricDiff{
 			this.modules.put(m2.getId(),m2);
 		}
 				
-		public HashMap<String, Object> getOM1() {
-			return this.om1;
-		}
-		
-		public HashMap<String, Object> getOM2() {
-			return this.om2;
-		}
-		
-		public void addDifference(Object m1,Object m2,String headerValue) {
-			this.om1.put(headerValue, m1);
-			this.om2.put(headerValue, m2);
-			this.headerItems.add(headerValue);
-			this.difference++;
-		}
+		.
+		.
+		.
 	}
