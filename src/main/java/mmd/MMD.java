@@ -98,14 +98,7 @@ public class MMD {
 				this.checkAndAddNeigbor(m1,m2);
 			}
 		}
-		
-//		for(Module m : this.modules.values()) {
-//			System.out.println("MODULE " + m.getName() + " " + m.getId());
-//		}
-//		for(Clone c : this.clones.values()) {
-//			System.out.println("Clone " + c.getId() + " " + c.size());
-//		}
-		
+				
 		HashSet<String> seenModule = new HashSet<String>();
 		
 		ArrayList<ModuleBaseClass> mbc = new ArrayList<ModuleBaseClass>();
@@ -114,12 +107,7 @@ public class MMD {
 		
 		for(ModuleBaseClass startNode : mbc) {
 			this.traverseGraph(startNode,seenModule);
-		}
-		
-//		for(Connection c : this.connections.values()) {
-//			System.out.println("Connection " + c.getId() + " " + c.getModules().get(0).getId() + "--" + c.getModules().get(1).getId() );
-//		}
-		
+		}	
 	}
 	
 	public void traverseGraph(ModuleBaseClass startNode,HashSet<String> seenConnection) {
@@ -159,52 +147,15 @@ public class MMD {
 
 		// The modules are clones
 		if(md.difference == 0) {
-			// New clone group!
-			if(!m1.isClone() && !m2.isClone()) {
-				Clone c = new Clone(cloneNextID.getAndIncrement());
-				m1.setClone(c);
-				m2.setClone(c);
-				c.addModule(m1);
-				c.addModule(m2);
-				this.clones.put(c.getId(),c);
-				c.vulnerabilityStatus.add(m1.getVulnerabilityStatus());
-				c.vulnerabilityStatus.add(m2.getVulnerabilityStatus());
-			}
-			// One of these is already a clone.
-			else if(m1.isClone()) {
-				Clone c = this.clones.get(m1.getCloneId());
-				m2.setClone(c);
-				c.addModule(m2);
-				c.vulnerabilityStatus.add(m2.getVulnerabilityStatus());
-			}
-			// One of these is already a clone.
-			else if(m2.isClone()) {
-				Clone c = this.clones.get(m2.getCloneId());
-				m1.setClone(c);
-				c.addModule(m1);
-				c.vulnerabilityStatus.add(m1.getVulnerabilityStatus());
-			}
-			// In case we have added these modules to the global modules list earlier.
-			if(this.modules.containsKey(m1.getId())) this.modules.remove(m1.getId());
-			if(this.modules.containsKey(m2.getId())) this.modules.remove(m2.getId());
+			.
+			.
+			.
 		}
 		// They are not clones of one another.
 		else {
-			ModuleBaseClass mb1 = m1.getSelf();
-			ModuleBaseClass mb2 = m2.getSelf();
-
-			if(!m1.isClone()) {
-				this.modules.put(m1.getId(),m1);
-			}
-			if(!m2.isClone()) {
-				this.modules.put(m2.getId(),m2);
-			}
-			
-			Connection conn = new Connection(mb1, mb2, connID++);
-			conn.cannibalizeMD(md);
-						
-			mb1.addNeigbor(mb2.getSelf(),conn);
-			mb2.addNeigbor(mb1.getSelf(),conn);				
+			.
+			.
+			.
 		}
 	}
 	

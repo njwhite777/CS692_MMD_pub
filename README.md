@@ -4,6 +4,8 @@ The contents of this repository contain the implementation of an algorithm known
 
 The MMD algorithm operates by taking an input format file and header file. The header file is used to interpret the format file. The data file contains the data that the algorithm will process. For every row in a data file (representing a module), all XMLTAG and METRIC type elements are compared with the corresponding type in every other row. Differences are recorded and some number of nearest neigbor modules are maintained. These neigbors could differ by 1 metric, 2, or 20. As long as the metric difference is the least metric difference for a module it will qualify as the nearest neigbor. After analysis has been carried out on a data file, graphs are generated for each of the modules and their nearest neigbors. In the graphs that are produced, each node represents a module or metric clone, and each edge a nearest metric difference relationship. In addition, an information rich XML format prints a second representation of the nearest metric relationships within the modules of the data file.  
 
+Note: A number of details have been obscured intentionally. This project is part of ongoing research and a final project for a Verification and Validation course at Ball State University. 
+
 #### e.g. Given the following inputs...
 <table border="0">
  <tr><th>example.dma_fmt</th><th>example.dma</th></tr>
